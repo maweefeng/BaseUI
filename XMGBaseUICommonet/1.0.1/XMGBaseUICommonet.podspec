@@ -9,7 +9,7 @@ Pod::Spec.new do |spec|
   # 库的描述
   spec.description  = "为了用户体验，自己封装了一些UIKit工具库方便使用,为了用户体验，自己封装了一些UIKit工具库方便使用为了用户体验，自己封装了一些UIKit工具库方便使用"
   # 项目主页地址
-  spec.homepage     = "https://github.com/maweefeng/BaseUICommponet"
+  spec.homepage     = "https://github.com/maweefeng/XMGBaseUICommonet"
   # 许可证 （固定写法，还不清楚为什么要这样写）
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   # 作者 填自己的名字和邮箱或者什么的 不是太重要
@@ -19,7 +19,7 @@ Pod::Spec.new do |spec|
   # 项目的地址（这个必须写正确）
   # 其他关联方式
   # 将这个Pod版本与Git仓库中某个commit绑定
-  spec.source       = { :git => "https://github.com/maweefeng/BaseUICommponet.git", :tag => spec.version }
+  spec.source       = { :git => "https://github.com/maweefeng/XMGBaseUICommonet.git", :tag => spec.version }
   # 需要包含的源文件
   # 源文件的其他写法
   # *匹配所有文件
@@ -28,8 +28,8 @@ Pod::Spec.new do |spec|
   # s.source_files  ="BaseUICommponet/*.{h,m}"
   # **表示匹配所有子目录
   # s.source_files  ="BaseUICommponet/**/*"
-  spec.source_files  = "BaseUICommponet/Classes/*"
-  spec.exclude_files = "BaseUICommponet/Classes/Exclude"
+  spec.source_files  = "XMGBaseUICommonet/Classes/*"
+  spec.exclude_files = "XMGBaseUICommonet/Classes/Exclude"
 
   # spec.resource  = "icon.png"
   # spec.resources = "Resources/*.png"
@@ -43,5 +43,13 @@ Pod::Spec.new do |spec|
   # 依赖库，不能依赖未发布的库
   spec.dependency  'SnapKit','~> 5.0.1'
   spec.dependency  'pop','~> 1.0.12'
-
+    spec.dependency  'SDWebImage','5.2.3'
+   #头像居中
+     spec.dependency 'FaceAware','2.1.0'
+     spec.dependency 'MJRefresh','3.2.0'
+   #弹出框
+     spec.dependency 'MMPopupView','1.7.2'
+   #空白页展示
+     spec.dependency 'DZNEmptyDataSet'
 end
+
